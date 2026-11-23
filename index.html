@@ -2302,7 +2302,36 @@
   </div>
 </div>
      
-    <section class="view" id="voiceView">
+    <section class="view" id="calendarView">
+  <div class="cal-page">
+    <div class="cal-head">
+      <div class="cal-head-t">
+        <span class="cal-en mono">CALENDAR · 一页一天</span>
+        <h2>日历</h2>
+        <p class="cal-lead">每天第一次打开 TA 的聊天，TA 会把今天的心情和一句留言作成一张「日历留言」卡送进聊天里——这里按日子把它们收好。点「写留言」记下你自己的心情和一句话，再把行程、备忘、事件一笔笔记在同一天。</p>
+      </div>
+       
+      <button type="button" class="cal-ico-btn" id="calSetBtn" aria-label="日历设置" title="日历设置"><svg viewBox="0 0 24 24" width="17" height="17" style="fill:currentColor;stroke:none" aria-hidden="true"><circle cx="5" cy="12" r="1.9"/><circle cx="12" cy="12" r="1.9"/><circle cx="19" cy="12" r="1.9"/></svg></button>
+    </div>
+    <div class="cal-month">
+      <button type="button" class="cal-nav" id="calPrev" aria-label="上个月"><svg viewBox="0 0 8 14" aria-hidden="true"><path d="M7 1 1.4 7 7 13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="cal-mtitle" id="calMonthTitle"></div>
+      <button type="button" class="cal-nav" id="calNext" aria-label="下个月"><svg viewBox="0 0 8 14" aria-hidden="true"><path d="M1 1l5.6 6L1 13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="cal-backtoday" id="calBackToday" hidden>回到今天</button>
+    </div>
+     
+    <div class="cal-months" id="calMonths"></div>
+    <div class="cal-week">
+      <span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+     
+    <p class="cal-summary" id="calSummary"></p>
+    <div class="cal-daypanel" id="calDayPanel"></div>
+  </div>
+</section>
+
+<section class="view" id="voiceView">
       <div class="voice-page">
         <div class="voice-target" id="vvTargetWrap">
           <span class="voice-target-av" id="vvTargetAv"></span>
